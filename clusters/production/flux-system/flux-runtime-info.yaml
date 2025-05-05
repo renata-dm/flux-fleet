@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: flux-runtime-info
+  namespace: flux-system
+  labels:
+    toolkit.fluxcd.io/runtime: "true"
+data:
+  ENVIRONMENT: production
+  CLUSTER_NAME: kind-flux-production
+  CLUSTER_DOMAIN: production.example.com
